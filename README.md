@@ -191,17 +191,6 @@ Whiskers says: Meow!
 
 ---
 
-## 🧪 Extensions and Ideas
-
-Want to expand the idea further?
-
-- Add more animals with custom `:speak` implementations.
-- Implement message history tracking per animal.
-- Add behavior like `:feed`, `:sleep`, or `:play`.
-- Create a Zoo manager that interacts with all animal processes.
-
----
-
 ## 📘 Summary Table of OO Concepts in Elixir
 
 | OOP Pillar      | Java                         | Elixir Equivalent                                  |
@@ -217,9 +206,3 @@ Want to expand the idea further?
 
 **Nandan Mogili**
 
----
-
-## 📜 License
-
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
-# Elixir-adapted-for-OOP
