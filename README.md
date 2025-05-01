@@ -12,7 +12,7 @@ All of this is achieved using **processes**, **message passing**, and **pattern 
 
 ---
 
-## 📘 Context
+## Context
 
 This Elixir implementation mirrors the behavior of a Java program with an abstract `Animal` class and two subclasses `Dog` and `Cat`, each overriding the `speak()` method.
 
@@ -30,29 +30,24 @@ Each "object" is a **process**. We send messages like `:speak` to a process, and
 
 ---
 
-## 🧠 Core Concepts & Implementation
+## Core Concepts & Implementation
 
-### ✅ Encapsulation
+### Encapsulation
 Each animal's state (e.g. its `name`) is stored inside a process. The only way to interact with this state is by sending messages to that process. External modules cannot directly access the internal data.
 
-### ✅ Abstraction
+### Abstraction
 The `Animal` module defines a basic loop for receiving messages, but the `:speak` behavior is intentionally unimplemented—simulating an abstract method. Calling it returns an error, just like calling an abstract method in Java.
 
-### ✅ Inheritance (Simulated)
+### Inheritance (Simulated)
 While Elixir doesn’t support classical inheritance, the shared logic for responding to messages (like `:get_name`) is reused across modules (`Animal`, `Dog`, `Cat`). Specialization is done by writing separate modules with customized behavior.
 
-### ✅ Polymorphism
+### Polymorphism
 All animals respond to the same message interface (e.g., `:speak`, `:get_name`). Despite this uniform interface, the response depends on the specific type (dog or cat), just like polymorphism in Java.
 
 ---
 
-## 📂 File Overview
 
-- `animal_objects.exs`: Main Elixir script containing all the modules and a `Main.run()` function that demonstrates the program in action.
-
----
-
-## 🛠 How It Works
+##  How It Works
 
 ### `Animal` Module (Abstract Behavior)
 
@@ -166,7 +161,7 @@ Main.run()
 
 ---
 
-## ▶️ How to Run
+## How to Run
 
 ### 1. Save the script
 
@@ -182,7 +177,7 @@ animal_objects.exs
 elixir animal_objects.exs
 ```
 
-### ✅ Expected Output
+### Expected Output
 
 ```bash
 Rex says: Woof!
@@ -191,7 +186,7 @@ Whiskers says: Meow!
 
 ---
 
-## 📘 Summary Table of OO Concepts in Elixir
+## Summary Table of OO Concepts in Elixir
 
 | OOP Pillar      | Java                         | Elixir Equivalent                                  |
 |------------------|------------------------------|----------------------------------------------------|
@@ -202,7 +197,7 @@ Whiskers says: Meow!
 
 ---
 
-## 👤 Author
+## Author
 
 **Nandan Mogili**
 
