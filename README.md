@@ -30,7 +30,7 @@ Each "object" is a **process**. We send messages like `:speak` to a process, and
 
 ---
 
-## Core Concepts & Implementation
+## Discussion Question and Implementation
 
 ### Encapsulation
 Each animal's state (e.g. its `name`) is stored inside a process. The only way to interact with this state is by sending messages to that process. External modules cannot directly access the internal data.
